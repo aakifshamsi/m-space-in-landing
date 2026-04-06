@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Page Not Found | Muslim Space</title>
+  <title>404 - Not Found | M-Space</title>
   <meta name="description" content="The page you're looking for doesn't exist.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script>
     tailwind.config = {
       theme: {
@@ -24,14 +25,24 @@
       }
     }
   </script>
+  <style>
+    .social-icon {
+      color: #f59e0b;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .social-icon:hover {
+      color: #fbbf24;
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body class="bg-gray-50 font-sans min-h-screen flex flex-col">
   <!-- Navbar -->
   <nav class="bg-green-700 text-white shadow-md">
     <div class="max-w-6xl mx-auto px-4 py-4">
-      <a href="/" class="flex items-center gap-2">
+      <a href="./index.html" class="flex items-center gap-2">
         <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
-        <span class="font-bold text-lg">Muslim Space</span>
+        <span class="font-bold text-lg">M-Space</span>
       </a>
     </div>
   </nav>
@@ -45,10 +56,10 @@
         Sorry, the page you're looking for doesn't exist or has been moved.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+        <a href="./index.html" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg">
           Go to Homepage
         </a>
-        <a href="about.html" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-6 rounded-lg transition-all border-2 border-green-700 hover:scale-105 shadow-lg">
+        <a href="./about.html" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-6 rounded-lg transition-all border-2 border-green-700 hover:scale-105 shadow-lg">
           Learn About Us
         </a>
       </div>
@@ -57,10 +68,12 @@
       <div class="mt-12 pt-8 border-t border-gray-200">
         <p class="text-gray-500 text-sm mb-4">Quick links:</p>
         <div class="flex justify-center gap-6 text-sm">
-          <a href="/" class="text-green-700 hover:underline">Home</a>
-          <a href="about.html" class="text-green-700 hover:underline">About</a>
-          <a href="mission.html" class="text-green-700 hover:underline">Mission</a>
-          <a href="join.html" class="text-green-700 hover:underline">Join</a>
+          <a href="./index.html" class="text-green-700 hover:underline">Home</a>
+          <a href="./about.html" class="text-green-700 hover:underline">About</a>
+          <a href="./manifesto.html" class="text-green-700 hover:underline">Manifesto</a>
+          <a href="./collaborate.html" class="text-green-700 hover:underline">Collaborate</a>
+          <a href="./links.html" class="text-green-700 hover:underline">Links</a>
+          <a href="./events.html" class="text-green-700 hover:underline">Events</a>
         </div>
       </div>
     </div>
@@ -68,13 +81,59 @@
   
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-8 mt-auto">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <div class="flex justify-center items-center gap-2 mb-4">
-        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-sm">M</div>
-        <span class="font-bold text-white">Muslim Space</span>
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <!-- Column 1 - Navigate -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="./index.html" class="hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="./about.html" class="hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="./manifesto.html" class="hover:text-amber-400 transition-colors">Manifesto</a></li>
+            <li><a href="./collaborate.html" class="hover:text-amber-400 transition-colors">Collaborate</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 2 - Resources -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="./links.html" class="hover:text-amber-400 transition-colors">Link Share</a></li>
+            <li><a href="./events.html" class="hover:text-amber-400 transition-colors">Events</a></li>
+            <li><a href="./links.html" class="hover:text-amber-400 transition-colors">Useful Links</a></li>
+            <li><a href="./release-notes.html" class="hover:text-amber-400 transition-colors">Release Notes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 - Connect -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Connect</h4>
+          <div class="flex gap-4 mb-4">
+            <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 4 - Credits -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Credits</h4>
+          <div class="space-y-2">
+            <p class="text-white font-semibold">edgy by <a href="https://hammy.dev" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">hammy</a></p>
+            <p class="text-sm"><a href="https://aakif.sham.si" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">aakif.sham.si</a></p>
+          </div>
+        </div>
       </div>
-      <p>&copy; 2026 Muslim Space. All rights reserved.</p>
-      <p class="mt-2 text-sm">Powered by <a href="https://l.m-space.in" class="text-amber-500 hover:underline">l.m-space.in</a></p>
+      
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-500 text-sm">© 2026 M-Space. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - M-Space</title>
+  <meta name="description" content="Support M-Space with your contribution. Help us continue providing free technology tools for communities worldwide.">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15803d',
+            secondary: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .social-icon {
+      color: #f59e0b;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .social-icon:hover {
+      color: #fbbf24;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar (minimal - back link only) -->
+  <nav class="bg-green-700 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="./index.html" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
+        <span class="font-bold text-lg">M-Space</span>
+      </a>
+      <a href="./index.html" class="text-sm hover:text-amber-300 transition-colors">← Back to Home</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-br from-green-700 to-green-800 text-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Support Our Mission</h1>
+      <p class="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+        Your contribution helps us keep our tools free for everyone
+      </p>
+    </div>
+  </header>
+  
+  <!-- Support Info -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-4xl">💝</span>
+        </div>
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Why Support M-Space?</h2>
+        <p class="text-gray-600 text-lg">
+          M-Space provides free tools to thousands of organizations worldwide. Your support helps us maintain servers, improve features, and keep everything accessible at no cost.
+        </p>
+      </div>
+      
+      <!-- Support Tiers -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-gray-50 rounded-xl p-6 text-center border-2 border-transparent hover:border-green-200 transition-colors">
+          <div class="text-4xl font-extrabold text-green-700 mb-2">$5</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Supporter</h3>
+          <p class="text-gray-600 text-sm">Help us cover monthly server costs</p>
+        </div>
+        <div class="bg-green-50 rounded-xl p-6 text-center border-2 border-green-500 relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</div>
+          <div class="text-4xl font-extrabold text-green-700 mb-2">$25</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Sponsor</h3>
+          <p class="text-gray-600 text-sm">Fund one month of hosting for the community</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 text-center border-2 border-transparent hover:border-green-200 transition-colors">
+          <div class="text-4xl font-extrabold text-green-700 mb-2">$100</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Benefactor</h3>
+          <p class="text-gray-600 text-sm">Support major feature development</p>
+        </div>
+      </div>
+      
+      <!-- Stripe Payment Link -->
+      <div class="bg-gradient-to-br from-green-50 to-amber-50 rounded-2xl p-8 text-center">
+        <h3 class="text-2xl font-bold mb-4 text-gray-800">Make a Contribution</h3>
+        <p class="text-gray-600 mb-6">Click below to make a secure payment via Stripe</p>
+        <a href="#" class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+          Donate with Stripe
+        </a>
+        <p class="text-gray-500 text-sm mt-4">Secure payment powered by Stripe</p>
+      </div>
+      
+      <!-- Alternative Support Methods -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <h4 class="text-lg font-bold mb-4 text-center text-gray-800">Other Ways to Support</h4>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h5 class="font-bold text-gray-800 mb-1">Bank Transfer</h5>
+            <p class="text-gray-600 text-sm">Contact us at <a href="mailto:hello@m-space.in" class="text-green-700 hover:underline">hello@m-space.in</a> for bank details</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4">
+            <h5 class="font-bold text-gray-800 mb-1">Crypto Donation</h5>
+            <p class="text-gray-600 text-sm">USDT (TRC20): TXb5X... (contact for full address)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="bg-white rounded-lg p-4 group">
+          <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+            Is my donation tax-deductible?
+            <span class="text-green-700 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-gray-600 mt-2">We're working on establishing 501(c)(3) status. Once approved, donations will be tax-deductible. For now, please consult your tax advisor.</p>
+        </details>
+        <details class="bg-white rounded-lg p-4 group">
+          <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+            How are donations used?
+            <span class="text-green-700 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-gray-600 mt-2">Donations cover server costs, domain renewals, and new feature development. We publish monthly transparency reports on our blog.</p>
+        </details>
+        <details class="bg-white rounded-lg p-4 group">
+          <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+            Can I make a recurring donation?
+            <span class="text-green-700 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-gray-600 mt-2">Yes! Stripe supports recurring payments. Contact us to set up a monthly giving plan.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 mt-0">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1 - Navigate -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="./index.html" class="hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="./about.html" class="hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="./manifesto.html" class="hover:text-amber-400 transition-colors">Manifesto</a></li>
+            <li><a href="./collaborate.html" class="hover:text-amber-400 transition-colors">Collaborate</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 2 - Resources -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="./links.html" class="hover:text-amber-400 transition-colors">Link Share</a></li>
+            <li><a href="./events.html" class="hover:text-amber-400 transition-colors">Events</a></li>
+            <li><a href="./links.html" class="hover:text-amber-400 transition-colors">Useful Links</a></li>
+            <li><a href="./release-notes.html" class="hover:text-amber-400 transition-colors">Release Notes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 - Connect -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Connect</h4>
+          <div class="flex gap-4 mb-4">
+            <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://instagram.com/m.space.in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <p class="text-sm">Join our community on Discord for real-time updates and collaboration.</p>
+        </div>
+        
+        <!-- Column 4 - Credits -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Credits</h4>
+          <div class="space-y-2">
+            <p class="text-white font-semibold">edgy by <a href="https://hammy.dev" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">hammy</a></p>
+            <p class="text-sm"><a href="https://aakif.sham.si" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">aakif.sham.si</a></p>
+            <p class="text-sm"><a href="https://digitalhands.in?ref=m-space" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">digitalhands.in</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-500 text-sm">© 2026 M-Space. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

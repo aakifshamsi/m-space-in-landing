@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Happenings | M-Space</title>
+  <meta name="description" content="Stay updated on M-Space events, community meetups, and virtual gatherings. Join us at upcoming events!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Events & Happenings | M-Space">
+  <meta property="og:description" content="Stay updated on M-Space events, community meetups, and virtual gatherings.">
+  <meta property="og:type" content="website">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15803d',
+            secondary: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .social-icon {
+      color: #f59e0b;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .social-icon:hover {
+      color: #fbbf24;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
+        <span class="font-bold text-lg">M-Space</span>
+      </a>
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-amber-300 transition-colors">About</a>
+        <a href="manifesto.html" class="hover:text-amber-300 transition-colors">Manifesto</a>
+        <a href="links.html" class="hover:text-amber-300 transition-colors">Useful Links</a>
+        <a href="events.html" class="hover:text-amber-300 transition-colors font-semibold">Events</a>
+        <a href="collaborate.html" class="hover:text-amber-300 transition-colors">Collaborate</a>
+        <div class="flex gap-4 ml-4 border-l border-green-500 pl-4">
+          <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon" title="X / Twitter">
+            <i class="fab fa-x-twitter text-xl"></i>
+          </a>
+          <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon" title="Discord">
+            <i class="fab fa-discord text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 pb-4">
+      <a href="/" class="block py-2 hover:text-amber-300">Home</a>
+      <a href="about.html" class="block py-2 hover:text-amber-300">About</a>
+      <a href="manifesto.html" class="block py-2 hover:text-amber-300">Manifesto</a>
+      <a href="links.html" class="block py-2 hover:text-amber-300">Useful Links</a>
+      <a href="events.html" class="block py-2 hover:text-amber-300 font-semibold">Events</a>
+      <a href="collaborate.html" class="block py-2 hover:text-amber-300">Collaborate</a>
+      <div class="flex gap-6 py-4 border-t border-green-600 mt-2">
+        <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-br from-green-700 to-green-800 text-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Events & Happenings</h1>
+      <p class="text-xl text-green-100 max-w-2xl mx-auto">
+        Stay connected with our community through virtual meetups, workshops, and collaborative sessions.
+      </p>
+    </div>
+  </header>
+  
+  <!-- Upcoming Events Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></span>
+        Upcoming Events
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Event Card 1 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 overflow-hidden flex flex-col">
+          <div class="h-2 bg-amber-500"></div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-amber-100 text-amber-700 px-3 py-1 rounded-lg text-sm font-semibold">
+                <i class="fas fa-video mr-1"></i> Virtual
+              </div>
+              <span class="text-gray-500 text-sm">April 2026</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-gray-800">Link Share Workshop</h3>
+            <p class="text-gray-600 mb-4 flex-grow">Learn how to create and manage branded short links for your projects. Perfect for beginners and intermediate users.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4">
+              <i class="fas fa-calendar-day mr-2"></i>
+              <span>April 15, 2026</span>
+              <span class="mx-2">•</span>
+              <i class="fas fa-clock mr-2"></i>
+              <span>7:00 PM UTC</span>
+            </div>
+            <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg text-center transition-all transform hover:scale-[1.02]">
+              <i class="fab fa-discord mr-2"></i> Join on Discord
+            </a>
+          </div>
+        </div>
+        
+        <!-- Event Card 2 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 overflow-hidden flex flex-col">
+          <div class="h-2 bg-green-600"></div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-green-100 text-green-700 px-3 py-1 rounded-lg text-sm font-semibold">
+                <i class="fas fa-users mr-1"></i> Community
+              </div>
+              <span class="text-gray-500 text-sm">April 2026</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-gray-800">Open Source Sprint</h3>
+            <p class="text-gray-600 mb-4 flex-grow">Join our monthly open source contribution sprint. Contribute to M-Space projects and earn recognition.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4">
+              <i class="fas fa-calendar-day mr-2"></i>
+              <span>April 22-23, 2026</span>
+              <span class="mx-2">•</span>
+              <i class="fas fa-clock mr-2"></i>
+              <span>All Day</span>
+            </div>
+            <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg text-center transition-all transform hover:scale-[1.02]">
+              <i class="fab fa-github mr-2"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        
+        <!-- Event Card 3 -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 overflow-hidden flex flex-col">
+          <div class="h-2 bg-purple-600"></div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-purple-100 text-purple-700 px-3 py-1 rounded-lg text-sm font-semibold">
+                <i class="fas fa-microphone mr-1"></i> Live Chat
+              </div>
+              <span class="text-gray-500 text-sm">May 2026</span>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-gray-800">Community AMA</h3>
+            <p class="text-gray-600 mb-4 flex-grow">Ask us anything! Monthly Q&A session where the M-Space team answers your questions about projects and plans.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4">
+              <i class="fas fa-calendar-day mr-2"></i>
+              <span>May 5, 2026</span>
+              <span class="mx-2">•</span>
+              <i class="fas fa-clock mr-2"></i>
+              <span>6:00 PM UTC</span>
+            </div>
+            <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg text-center transition-all transform hover:scale-[1.02]">
+              <i class="fab fa-x-twitter mr-2"></i> Follow for Updates
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Calendar View CTA -->
+      <div class="mt-10 text-center">
+        <a href="https://calendar.m-space.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all">
+          <i class="fas fa-calendar-alt"></i>
+          View Full Calendar
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Past Events / Archive -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-gray-400 rounded-full"></span>
+        Past Events Archive
+      </h2>
+      
+      <div class="space-y-4">
+        <!-- Past Event 1 -->
+        <div class="bg-white rounded-lg p-5 border border-gray-100 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex-shrink-0 text-center bg-gray-100 rounded-lg p-3 w-20">
+            <div class="text-2xl font-bold text-gray-700">Mar</div>
+            <div class="text-gray-500 text-sm">2026</div>
+          </div>
+          <div class="flex-grow">
+            <h3 class="font-semibold text-gray-800 mb-1">Analytics Dashboard Launch</h3>
+            <p class="text-gray-600 text-sm">Released our new analytics dashboard with real-time link tracking.</p>
+          </div>
+          <a href="https://x.com/m_space_in/status/1234567890" target="_blank" rel="noopener noreferrer" class="text-green-700 hover:text-green-800 font-medium text-sm flex items-center gap-1">
+            View Highlights <i class="fas fa-external-link-alt text-xs"></i>
+          </a>
+        </div>
+        
+        <!-- Past Event 2 -->
+        <div class="bg-white rounded-lg p-5 border border-gray-100 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex-shrink-0 text-center bg-gray-100 rounded-lg p-3 w-20">
+            <div class="text-2xl font-bold text-gray-700">Feb</div>
+            <div class="text-gray-500 text-sm">2026</div>
+          </div>
+          <div class="flex-grow">
+            <h3 class="font-semibold text-gray-800 mb-1">Winter Code Sprint</h3>
+            <p class="text-gray-600 text-sm">Community members contributed 50+ PRs across our open source projects.</p>
+          </div>
+          <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="text-green-700 hover:text-green-800 font-medium text-sm flex items-center gap-1">
+            View Contributions <i class="fas fa-external-link-alt text-xs"></i>
+          </a>
+        </div>
+        
+        <!-- Past Event 3 -->
+        <div class="bg-white rounded-lg p-5 border border-gray-100 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex-shrink-0 text-center bg-gray-100 rounded-lg p-3 w-20">
+            <div class="text-2xl font-bold text-gray-700">Jan</div>
+            <div class="text-gray-500 text-sm">2026</div>
+          </div>
+          <div class="flex-grow">
+            <h3 class="font-semibold text-gray-800 mb-1">M-Space 2.0 Launch</h3>
+            <p class="text-gray-600 text-sm">Major platform update with new features and improved user experience.</p>
+          </div>
+          <a href="https://docs.m-space.in/changelog" target="_blank" rel="noopener noreferrer" class="text-green-700 hover:text-green-800 font-medium text-sm flex items-center gap-1">
+            Read Changelog <i class="fas fa-external-link-alt text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Submit Event Section -->
+  <section class="py-16 bg-green-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Have an Event to Share?</h2>
+      <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
+        Know about a community event, meetup, or webinar that would interest M-Space contributors? Let us know!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://github.com/m-space-in/events/issues/new?template=event-submission.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-green-700 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          <i class="fab fa-github"></i>
+          Submit an Event
+        </a>
+        <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          <i class="fab fa-discord"></i>
+          Post in Discord
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stay Updated Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Never Miss an Event</h2>
+      <p class="text-gray-600 mb-8">
+        Stay updated on upcoming events by following us on social media or joining our Discord server.
+      </p>
+      <div class="flex justify-center gap-6">
+        <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+          <i class="fab fa-x-twitter text-2xl text-gray-700"></i>
+        </a>
+        <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-indigo-600 hover:bg-indigo-700 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+          <i class="fab fa-discord text-2xl text-white"></i>
+        </a>
+        <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gray-800 hover:bg-gray-900 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+          <i class="fab fa-github text-2xl text-white"></i>
+        </a>
+        <a href="https://instagram.com/m.space.in" target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 hover:opacity-90 rounded-full flex items-center justify-center transition-all transform hover:scale-110">
+          <i class="fab fa-instagram text-2xl text-white"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1 - Navigate -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="manifesto.html" class="hover:text-amber-400 transition-colors">Manifesto</a></li>
+            <li><a href="collaborate.html" class="hover:text-amber-400 transition-colors">Collaborate</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 2 - Resources -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="https://l.m-space.in" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">Link Share</a></li>
+            <li><a href="events.html" class="hover:text-amber-400 transition-colors">Events</a></li>
+            <li><a href="links.html" class="hover:text-amber-400 transition-colors">Useful Links</a></li>
+            <li><a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">Release Notes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 - Connect -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Connect</h4>
+          <div class="flex gap-4 mb-4">
+            <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://instagram.com/m.space.in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <p class="text-sm">Join our community on Discord for real-time updates and collaboration.</p>
+        </div>
+        
+        <!-- Column 4 - Credits -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Credits</h4>
+          <div class="space-y-2">
+            <p class="text-white font-semibold">edgy by <a href="https://hammy.dev" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">hammy</a></p>
+            <p class="text-sm"><a href="https://aakif.sham.si" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">aakif.sham.si</a></p>
+            <p class="text-sm"><a href="https://digitalhands.in?ref=m-space" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">digitalhands.in</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-500 text-sm">© 2026 M-Space. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

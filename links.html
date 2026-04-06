@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Useful Links | M-Space</title>
+  <meta name="description" content="Discover all M-Space tools and resources. Link shortener, analytics, events platform, and more community resources.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Useful Links | M-Space">
+  <meta property="og:description" content="Discover all M-Space tools and resources.">
+  <meta property="og:type" content="website">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15803d',
+            secondary: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .social-icon {
+      color: #f59e0b;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .social-icon:hover {
+      color: #fbbf24;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
+        <span class="font-bold text-lg">M-Space</span>
+      </a>
+      <div class="hidden md:flex gap-6 items-center">
+        <a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-amber-300 transition-colors">About</a>
+        <a href="manifesto.html" class="hover:text-amber-300 transition-colors">Manifesto</a>
+        <a href="links.html" class="hover:text-amber-300 transition-colors font-semibold">Useful Links</a>
+        <a href="events.html" class="hover:text-amber-300 transition-colors">Events</a>
+        <a href="collaborate.html" class="hover:text-amber-300 transition-colors">Collaborate</a>
+        <div class="flex gap-4 ml-4 border-l border-green-500 pl-4">
+          <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon" title="X / Twitter">
+            <i class="fab fa-x-twitter text-xl"></i>
+          </a>
+          <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon" title="Discord">
+            <i class="fab fa-discord text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 pb-4">
+      <a href="/" class="block py-2 hover:text-amber-300">Home</a>
+      <a href="about.html" class="block py-2 hover:text-amber-300">About</a>
+      <a href="manifesto.html" class="block py-2 hover:text-amber-300">Manifesto</a>
+      <a href="links.html" class="block py-2 hover:text-amber-300 font-semibold">Useful Links</a>
+      <a href="events.html" class="block py-2 hover:text-amber-300">Events</a>
+      <a href="collaborate.html" class="block py-2 hover:text-amber-300">Collaborate</a>
+      <div class="flex gap-6 py-4 border-t border-green-600 mt-2">
+        <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-br from-green-700 to-green-800 text-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Useful Links</h1>
+      <p class="text-xl text-green-100 max-w-2xl mx-auto">
+        Explore all M-Space tools, resources, and community projects in one place.
+      </p>
+    </div>
+  </header>
+  
+  <!-- Featured Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-amber-500 rounded-full"></span>
+        Featured Tool
+      </h2>
+      
+      <div class="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-8 text-white shadow-xl">
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-3">Flagship Product</span>
+            <h3 class="text-3xl font-bold mb-3">Link Share</h3>
+            <p class="text-amber-100 text-lg mb-6 max-w-2xl">
+              Create short, branded links with powerful tracking and analytics. Perfect for sharing resources, tracking engagement, and building your online presence.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://l.m-space.in" target="_blank" rel="noopener noreferrer" class="bg-white text-amber-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
+                <i class="fas fa-external-link-alt"></i>
+                Start Using Link Share
+              </a>
+              <a href="https://docs.m-space.in/link-share" target="_blank" rel="noopener noreferrer" class="bg-white/10 text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/20 transition-all inline-flex items-center gap-2">
+                <i class="fas fa-book"></i>
+                Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Community Resources -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-green-600 rounded-full"></span>
+        Community Resources
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Analytics Dashboard -->
+        <a href="https://analytics.m-space.in" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
+            <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">Analytics Dashboard</h3>
+          <p class="text-gray-600 text-sm">Track link performance, click-through rates, and engagement metrics in real-time.</p>
+          <span class="inline-flex items-center text-sm text-green-700 font-semibold mt-4">
+            Open Dashboard <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+          </span>
+        </a>
+        
+        <!-- Events Calendar -->
+        <a href="events.html" class="bg-white rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-200 transition-colors">
+            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">Events Calendar</h3>
+          <p class="text-gray-600 text-sm">Stay updated on upcoming community events, meetups, and virtual gatherings.</p>
+          <span class="inline-flex items-center text-sm text-green-700 font-semibold mt-4">
+            View Events <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+          </span>
+        </a>
+        
+        <!-- Community Directory -->
+        <a href="about.html" class="bg-white rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">Community Directory</h3>
+          <p class="text-gray-600 text-sm">Explore projects, meet contributors, and find opportunities to collaborate.</p>
+          <span class="inline-flex items-center text-sm text-green-700 font-semibold mt-4">
+            Explore Directory <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Developer Tools -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-gray-600 rounded-full"></span>
+        Developer Tools
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- API Documentation -->
+        <a href="https://api.m-space.in/docs" target="_blank" rel="noopener noreferrer" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">API Documentation</h3>
+          <p class="text-gray-600 text-sm">Integrate M-Space tools into your own applications with our REST API.</p>
+        </a>
+        
+        <!-- GitHub Repository -->
+        <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gray-900 transition-colors">
+            <i class="fab fa-github text-xl text-white"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">GitHub Repositories</h3>
+          <p class="text-gray-600 text-sm">Browse our open-source projects, contribute code, and report issues.</p>
+        </a>
+        
+        <!-- Status Page -->
+        <a href="https://status.m-space.in" target="_blank" rel="noopener noreferrer" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all border border-gray-100 group">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800 group-hover:text-green-700 transition-colors">System Status</h3>
+          <p class="text-gray-600 text-sm">Check the uptime and status of all M-Space services and tools.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Documentation -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800 flex items-center gap-3">
+        <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+        Documentation
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <a href="https://docs.m-space.in/getting-started" target="_blank" rel="noopener noreferrer" class="bg-white rounded-lg p-5 hover:shadow-md transition-all border border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-rocket text-green-700"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Getting Started</h4>
+            <p class="text-xs text-gray-500">Quick start guide</p>
+          </div>
+        </a>
+        
+        <a href="https://docs.m-space.in/link-share" target="_blank" rel="noopener noreferrer" class="bg-white rounded-lg p-5 hover:shadow-md transition-all border border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-link text-amber-700"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Link Share</h4>
+            <p class="text-xs text-gray-500">Link shortener docs</p>
+          </div>
+        </a>
+        
+        <a href="https://docs.m-space.in/analytics" target="_blank" rel="noopener noreferrer" class="bg-white rounded-lg p-5 hover:shadow-md transition-all border border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-chart-bar text-blue-700"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Analytics</h4>
+            <p class="text-xs text-gray-500">Tracking & metrics</p>
+          </div>
+        </a>
+        
+        <a href="https://docs.m-space.in/api" target="_blank" rel="noopener noreferrer" class="bg-white rounded-lg p-5 hover:shadow-md transition-all border border-gray-100 flex items-center gap-3">
+          <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-code text-purple-700"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">API Reference</h4>
+            <p class="text-xs text-gray-500">API documentation</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Suggest a Link Section -->
+  <section class="py-16 bg-green-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Know a Great Resource?</h2>
+      <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
+        Help us build a better collection of tools and resources for the community. Suggest a link that should be featured here.
+      </p>
+      <a href="https://github.com/m-space-in/links/issues/new?template=suggest-link.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-green-700 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+        <i class="fab fa-github"></i>
+        Suggest a Link
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1 - Navigate -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Navigate</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="manifesto.html" class="hover:text-amber-400 transition-colors">Manifesto</a></li>
+            <li><a href="collaborate.html" class="hover:text-amber-400 transition-colors">Collaborate</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 2 - Resources -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="https://l.m-space.in" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">Link Share</a></li>
+            <li><a href="events.html" class="hover:text-amber-400 transition-colors">Events</a></li>
+            <li><a href="links.html" class="hover:text-amber-400 transition-colors">Useful Links</a></li>
+            <li><a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">Release Notes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 - Connect -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Connect</h4>
+          <div class="flex gap-4 mb-4">
+            <a href="https://github.com/m-space-in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/m_space_in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://discord.gg/m-space" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://instagram.com/m.space.in" target="_blank" rel="noopener noreferrer" class="social-icon text-2xl" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <p class="text-sm">Join our community on Discord for real-time updates and collaboration.</p>
+        </div>
+        
+        <!-- Column 4 - Credits -->
+        <div>
+          <h4 class="text-white font-bold mb-4">Credits</h4>
+          <div class="space-y-2">
+            <p class="text-white font-semibold">edgy by <a href="https://hammy.dev" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">hammy</a></p>
+            <p class="text-sm"><a href="https://aakif.sham.si" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">aakif.sham.si</a></p>
+            <p class="text-sm"><a href="https://digitalhands.in?ref=m-space" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">digitalhands.in</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-500 text-sm">© 2026 M-Space. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
