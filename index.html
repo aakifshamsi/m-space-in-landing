@@ -60,9 +60,23 @@
         <a href="/" class="hover:text-amber-300 transition-colors">Home</a>
         <a href="about.html" class="hover:text-amber-300 transition-colors">About</a>
         <a href="manifesto.html" class="hover:text-amber-300 transition-colors">Manifesto</a>
-        <a href="links.html" class="hover:text-amber-300 transition-colors">Useful Links</a>
+        <!-- Useful Links Dropdown -->
+        <div class="relative group">
+          <button class="hover:text-amber-300 transition-colors flex items-center gap-1">
+            Useful Links
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute hidden group-hover:block top-full left-0 mt-1 bg-green-700 rounded-lg shadow-xl py-2 min-w-[180px] z-50">
+            <a href="https://l.m-space.in" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-green-600 transition-colors">Link Shortener</a>
+            <a href="https://l.m-space.in/admin/dashboard" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-green-600 transition-colors">Analytics Dashboard</a>
+            <a href="events.html" class="block px-4 py-2 hover:bg-green-600 transition-colors">Events</a>
+          </div>
+        </div>
         <a href="events.html" class="hover:text-amber-300 transition-colors">Events</a>
         <a href="collaborate.html" class="hover:text-amber-300 transition-colors">Collaborate</a>
+        <a href="https://l.m-space.in/admin/login" class="bg-amber-500 hover:bg-amber-400 text-green-800 font-semibold px-4 py-2 rounded-lg transition-colors">Login</a>
         <div class="flex gap-4 ml-4 border-l border-green-500 pl-4">
           <a href="https://github.com/aakifshamsi/m-space-in-landing" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
             <i class="fab fa-github text-xl"></i>
@@ -217,7 +231,7 @@
         </a>
         
         <!-- Analytics Dashboard -->
-        <a href="https://m-space.in/admin/analytics" target="_blank" rel="noopener noreferrer" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+        <a href="https://l.m-space.in/admin/dashboard" target="_blank" rel="noopener noreferrer" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
           <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
