@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission - Muslim Space</title>
+  <meta name="description" content="Muslim Space mission statement - empowering the Muslim community through technology and providing free tools for organizations.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15803d',
+            secondary: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
+        <span class="font-bold text-lg">Muslim Space</span>
+      </a>
+      <div class="hidden md:flex gap-6">
+        <a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-amber-300 transition-colors">About</a>
+        <a href="mission.html" class="hover:text-amber-300 transition-colors">Mission</a>
+        <a href="join.html" class="hover:text-amber-300 transition-colors">Join</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 pb-4">
+      <a href="/" class="block py-2 hover:text-amber-300">Home</a>
+      <a href="about.html" class="block py-2 hover:text-amber-300">About</a>
+      <a href="mission.html" class="block py-2 hover:text-amber-300">Mission</a>
+      <a href="join.html" class="block py-2 hover:text-amber-300">Join</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-br from-green-700 to-green-800 text-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Our Mission</h1>
+      <p class="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+        Empowering communities through accessible technology
+      </p>
+    </div>
+  </header>
+  
+  <!-- Mission Statement -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-green-50 border-l-4 border-green-700 p-8 rounded-r-lg mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-green-800">Mission Statement</h2>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          To provide free, high-quality technology tools that empower Muslim organizations and communities to connect, share knowledge, and grow—regardless of their technical expertise or budget.
+        </p>
+      </div>
+      
+      <div class="prose prose-lg max-w-none text-gray-600">
+        <p class="mb-6">
+          We believe that every community deserves access to the same powerful technology tools that big organizations use. Our mission is to democratize access to link management, analytics, and communication tools—all built with Islamic values in mind.
+        </p>
+        <p>
+          From masjids to community organizations, from educators to activists—Muslim Space provides the infrastructure that helps Muslim communities thrive in the digital age.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Core Values -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Core Values</h2>
+      <div class="space-y-6">
+        <!-- Value 1 -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🤲</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Community First</h3>
+            <p class="text-gray-600">Everything we build starts with understanding the real needs of Muslim communities. We listen, we learn, and we create tools that solve actual problems.</p>
+          </div>
+        </div>
+        
+        <!-- Value 2 -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🆓</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Free Access for All</h3>
+            <p class="text-gray-600">We reject the idea that good technology should only be available to those who can pay. All our core features are and will remain free forever.</p>
+          </div>
+        </div>
+        
+        <!-- Value 3 -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🔐</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Privacy & Trust</h3>
+            <p class="text-gray-600">We respect your data. No tracking, no selling information, no advertisements. Your trust is more important than any revenue.</p>
+          </div>
+        </div>
+        
+        <!-- Value 4 -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🌟</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Excellence in Craft</h3>
+            <p class="text-gray-600">We build tools we'd be proud to use ourselves. Quality isn't optional—it's the standard for everything we create.</p>
+          </div>
+        </div>
+        
+        <!-- Value 5 -->
+        <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🌍</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Global Unity</h3>
+            <p class="text-gray-600">Technology should bridge distances, not create barriers. We build with the entire global Muslim community in mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Impact Goals -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Impact Goals</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6">
+          <div class="text-4xl font-extrabold text-green-700 mb-2">50K+</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Links Created</h3>
+          <p class="text-gray-600 text-sm">Providing short, memorable links for community resources worldwide</p>
+        </div>
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+          <div class="text-4xl font-extrabold text-amber-700 mb-2">500+</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Organizations Served</h3>
+          <p class="text-gray-600 text-sm">Supporting masjids, schools, and community organizations globally</p>
+        </div>
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6">
+          <div class="text-4xl font-extrabold text-green-700 mb-2">1M+</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Clicks Served</h3>
+          <p class="text-gray-600 text-sm">Connecting community members with valuable resources</p>
+        </div>
+        <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6">
+          <div class="text-4xl font-extrabold text-amber-700 mb-2">100%</div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Free Forever</h3>
+          <p class="text-gray-600 text-sm">Core features available at no cost, forever</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-16 bg-green-700 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Join Our Mission</h2>
+      <p class="text-green-100 text-lg mb-6">
+        Help us build technology that serves the Muslim community.
+      </p>
+      <a href="join.html" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-green-900 font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+        Become a Volunteer
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 mt-0">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="flex justify-center items-center gap-2 mb-4">
+        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-sm">M</div>
+        <span class="font-bold text-white">Muslim Space</span>
+      </div>
+      <p>&copy; 2026 Muslim Space. All rights reserved.</p>
+      <p class="mt-2 text-sm">Powered by <a href="https://l.m-space.in" class="text-amber-500 hover:underline">l.m-space.in</a></p>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

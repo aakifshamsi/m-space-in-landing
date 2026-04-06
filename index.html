@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim Space - Empowering Community Through Technology</title>
+  <meta name="description" content="Muslim Space provides free tools and services to empower the Muslim community through technology. Link shortener, analytics, and more.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#15803d',
+            secondary: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-lg">M</div>
+        <span class="font-bold text-lg">Muslim Space</span>
+      </a>
+      <div class="hidden md:flex gap-6">
+        <a href="/" class="hover:text-amber-300 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-amber-300 transition-colors">About</a>
+        <a href="mission.html" class="hover:text-amber-300 transition-colors">Mission</a>
+        <a href="join.html" class="hover:text-amber-300 transition-colors">Join</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 pb-4">
+      <a href="/" class="block py-2 hover:text-amber-300">Home</a>
+      <a href="about.html" class="block py-2 hover:text-amber-300">About</a>
+      <a href="mission.html" class="block py-2 hover:text-amber-300">Mission</a>
+      <a href="join.html" class="block py-2 hover:text-amber-300">Join</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-br from-green-700 to-green-800 text-white py-20 md:py-32">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Empowering the Muslim Community<br>Through Technology
+      </h1>
+      <p class="text-xl md:text-2xl text-green-100 mb-10 max-w-3xl mx-auto">
+        Free tools and services designed to help Muslim organizations, communities, and individuals connect and grow together.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="join.html" class="bg-amber-500 hover:bg-amber-600 text-green-900 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          Join as Volunteer
+        </a>
+        <a href="https://l.m-space.in" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          Start Sharing Links
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Features Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">Our Services</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Powerful tools built specifically for the Muslim community</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Link Shortener -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100">
+          <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800">Link Shortener</h3>
+          <p class="text-gray-600 text-sm">Create short, branded links for your community resources and content</p>
+        </div>
+        
+        <!-- Analytics -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100">
+          <div class="w-14 h-14 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800">Analytics</h3>
+          <p class="text-gray-600 text-sm">Track link clicks and engagement with detailed analytics dashboard</p>
+        </div>
+        
+        <!-- AI Tools -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100">
+          <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800">AI Tools</h3>
+          <p class="text-gray-600 text-sm">Smart tools powered by AI to help manage and organize content</p>
+        </div>
+        
+        <!-- Community Forms -->
+        <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-gray-100">
+          <div class="w-14 h-14 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-800">Community Forms</h3>
+          <p class="text-gray-600 text-sm">Easy-to-use forms for volunteer signups, donations, and feedback</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats Section -->
+  <section class="py-16 bg-green-700 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-5xl font-extrabold mb-2 text-amber-400" id="stat-links">0</div>
+          <div class="text-green-100 text-lg">Links Shortened</div>
+        </div>
+        <div>
+          <div class="text-5xl font-extrabold mb-2 text-amber-400" id="stat-clicks">0</div>
+          <div class="text-green-100 text-lg">Total Clicks</div>
+        </div>
+        <div>
+          <div class="text-5xl font-extrabold mb-2 text-amber-400" id="stat-members">0</div>
+          <div class="text-green-100 text-lg">Community Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Ready to Get Started?</h2>
+      <p class="text-gray-600 text-lg mb-8">
+        Join our growing community of volunteers and start using our free tools today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="join.html" class="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+          Volunteer With Us
+        </a>
+        <a href="about.html" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-4 px-8 rounded-lg text-lg transition-all border-2 border-green-700 hover:scale-105 shadow-lg">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="flex justify-center items-center gap-2 mb-4">
+        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-green-800 text-sm">M</div>
+        <span class="font-bold text-white">Muslim Space</span>
+      </div>
+      <p>&copy; 2026 Muslim Space. All rights reserved.</p>
+      <p class="mt-2 text-sm">Powered by <a href="https://l.m-space.in" class="text-amber-500 hover:underline">l.m-space.in</a></p>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+    
+    // Animate stats on scroll
+    function animateValue(element, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const value = Math.floor(progress * (end - start) + start);
+        element.textContent = value.toLocaleString();
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    // Intersection Observer for stats animation
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateValue(document.getElementById('stat-links'), 0, 12847, 2000);
+          animateValue(document.getElementById('stat-clicks'), 0, 89342, 2000);
+          animateValue(document.getElementById('stat-members'), 0, 2458, 2000);
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    statsObserver.observe(document.querySelector('.bg-green-700'));
+  </script>
+</body>
+</html>
